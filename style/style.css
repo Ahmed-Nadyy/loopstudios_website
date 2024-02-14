@@ -120,7 +120,7 @@ align-items: center;
  .container_one .box{
     display: flex;
     border: 1px solid  white;
-    width: 80vh;
+    width: 75vh;
     height:250px;
     align-items: center;
     font-size:10vh ;
@@ -271,6 +271,9 @@ align-items: center;
    background-color: white;
    
 }
+#showwless{
+    display: none;
+}
 .container_three  .btt{
     display: none;
     width: 15%;
@@ -331,7 +334,19 @@ align-items: center;
 #showless{
     display: none;
 }
+#btt{
+    display: none;
+}
  @media (max-width: 750px) {
+    #bttt{
+        display: none;
+    }
+    #showwless{
+        display: none;
+    }
+    #btt{
+        display: inline-block;
+    }
     .header ul{
         display: none;
         }
@@ -584,3 +599,6 @@ align-items: center;
             align-items: center;
         }
 }
+/* @media (min-width: 751px) {
+    
+} */
