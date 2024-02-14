@@ -120,7 +120,7 @@ align-items: center;
  .container_one .box{
     display: flex;
     border: 1px solid  white;
-    width: 75vh;
+    width: 80vh;
     height:250px;
     align-items: center;
     font-size:10vh ;
@@ -168,8 +168,11 @@ align-items: center;
  .container_three{
     width: 100%;
     height: auto;
+    
 }
 .container_three .c{
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: auto;
     margin: 55px  0 50px 45px;
@@ -178,7 +181,7 @@ align-items: center;
 
  .container_three .box{
     display: inline-block;
-    width: 270px;
+    width: 260px;
     height: 480px;
     margin-left:25px ;
     margin-bottom:25px ;
