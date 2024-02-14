@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.mobile_header{
+    flex-direction: column;
+    display: none;
+    height: 100vh;
+    background-color: #000000;
+}
+.mobile_header ul{
+    list-style: none;
+    display: block;
+    color: white;
+}
+.mobile_header li{
+    display: block;
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+.mobile_all{
+    margin: 50px;
+
+}
+.mobile_header .top{
+    margin-bottom: 80px;
+}
+.mobile_header .top .left{
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    transform: rotate(45deg);
+    border-radius:5px ;
+    background-color: #ffffff;
+    margin-bottom:5px ;
+}
+.mobile_header .top .right{
+    width: 3px;
+    height: 30px;
+    transform: rotate(-45deg);
+    border-radius:5px ;
+    background-color: #ffffff;
+    margin-bottom:5px ;
+}
+.container_one{
+    background-image: url('../images/desktop/image-hero.jpg');
+    background-size:cover;
+    color: white;
+    height:400px ;
+    margin: 0;
+    padding: 20px 70px 20px 70px;
+}
+.header {
+display:flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.left{
+    display: none;
+    flex-direction: column;
+}
+.left .top{
+   width: 30px;
+   height: 3px;
+   border-radius:5px ;
+   background-color: #ffffff;
+   margin-bottom:5px ;
+}
+.left .middle{
+    width: 30px;
+    height: 3px;
+    border-radius:5px ;
+    background-color: #ffffff;
+    margin-bottom:5px ;
+ }
+ .left .bottom{
+    width: 30px;
+    height: 3px;
+    border-radius:5px ;
+    background-color: #ffffff;
+    margin-bottom:5px ; 
+ }
+
+.header ul{
+list-style: none;
+display: inline-block;
+}
+.header ul li{
+    display: inline-block;
+    margin: 0 10px;
+ }
+ .container_one .box{
+    display: flex;
+    border: 1px solid  white;
+    width: 80vh;
+    height:250px;
+    align-items: center;
+    font-size:10vh ;
+    margin-top: 60px;
+    padding: 15px;
+    letter-spacing: 5px;
+ }
+ .container_two {
+    display: flex;
+    /* align-items: center; */
+    height: 100vh;
+    width: 100%;
+    /* background-color: aqua; */
+ } 
+
+ .container_two .box_one{
+    margin: 80px  0 0 75px;
+    width: 100vh;
+    height: 63vh;
+    /* background-color: aqua; */
+    background-image: url('../images/desktop/image-interactive.jpg');
+ }
+ .container_two .box_two{
+    
+    position: absolute;
+    width: 60vh;
+    height: 40vh;
+    left: 43%;
+    margin-top: 23%;
+    /* text-align: center; */
+    background-color: white;
+ }
+ .container_two .box_two h1{
+    font-size:4vh ;
+    margin: 40px  0 10px 40px; 
+    font-weight: 100;
+ }
+ .container_two .box_two p{
+    font-size:2vh ;
+    color:#8c90a2 ;
+    margin: 10px  0 10px 40px; 
+    font-weight: 100;
+
+ }
+ .container_three{
+    width: 100%;
+    height: auto;
+}
+.container_three .c{
+    width: auto;
+    height: auto;
+    margin: 55px  0 50px 45px;
+    display: inline-block;
+ }
+
+ .container_three .box{
+    display: inline-block;
+    width: 270px;
+    height: 480px;
+    margin-left:25px ;
+    margin-bottom:25px ;
+    /* background-color: aqua; */
+    background-image: url('../images/desktop/image-deep-earth.jpg');
+    background-size:cover ;
+    
+
+}
+.container_three .box:hover{
+    transform: scale(1.02);
+
+
+}
+.container_three .box:nth-child(1){
+    background-image: url('../images/desktop/image-deep-earth.jpg');
+    background-size:cover ;
+
+
+}
+.container_three .box:nth-child(2){
+    background-image: url('../images/desktop/image-night-arcade.jpg');
+    background-size:cover ;
+
+
+}
+.container_three .box:nth-child(3){
+    background-image: url('../images/desktop/image-soccer-team.jpg');
+    background-size:cover ;
+
+
+}
+.container_three .box:nth-child(4){
+    background-image: url('../images/desktop/image-grid.jpg');
+    background-size:cover ;
+
+
+}
+.container_three .box:nth-child(5){
+    background-image: url('../images/desktop/image-from-above.jpg');
+    background-size:cover ;
+
+
+}
+.container_three .box:nth-child(6){
+    background-image: url('../images/desktop/image-pocket-borealis.jpg');
+    background-size:cover ;
+
+
+}
+.container_three .box:nth-child(7){
+    background-image: url('../images/desktop/image-curiosity.jpg');
+    background-size:cover ;
+
+
+}
+
+
+
+
+.container_three .box p{
+    color: aliceblue;
+    position: relative;
+    font-size: 30px;
+    margin-left: 20px;
+    top:80%;
+
+}
+/* .container_three .c h2{
+    margin-left: 25px;
+    margin-bottom: 35px;
+    font-weight: 100;
+
+} */
+.container_three .cc{
+    margin-left: 25px;
+    margin-bottom: 35px;
+    margin-right: 95px;
+    font-weight: 100;
+    width: inherit;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container_three .cc .bt{
+   width: 15%;
+   height: 40px;
+   background-color: white;
+   
+}
+.container_three  .btt{
+    display: none;
+    background-color: white;
+    
+ }
+.container_three .cc button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    
+ }
+
+ .container_footerr {
+     width: 100%;
+     height: 170px;
+     background-color: #000000;
+     display: flex;
+     flex-direction: column;
+     color: white;
+ }
+
+ .container_footerr ul{
+    display: inline-block;
+    list-style: none;
+}
+.container_footerr li{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-weight: 100;
+
+}
+
+ .container_footerr .top{
+   display: flex;
+   justify-content: space-between;
+   margin: 40px 70px 10px 70px;
+   align-items: center;
+ }
+
+ .container_footerr .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 70px 20px 70px;
+    font-size: 15px;
+
+ }
+ .container_footerr .bottom p{
+    color: #6d787f;
+ }
+
+ @media (max-width: 750px) {
+    .header ul{
+        display: none;
+        }
+    .header ul{
+        display: none;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+        }
+        .container_one{
+            background-image: url('../images/mobile/image-hero.jpg');
+            height:100vh;
+            margin: 0;
+            padding: 40px 30px 0px 30px;
+        }
+        .container_one .box{
+            position: relative;
+            border: 1px solid  white;
+            width: 25vh;
+            height:15vh;
+            align-items: center;
+            font-size:2.5vh;
+            letter-spacing: 5px;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+         }
+
+        .container_two {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+         } 
+        
+         .container_two .box_one{
+            margin: 80px  10px 25px 10px;
+            width:95%;
+            height: 30vh;
+            background-image: url('../images/mobile/image-interactive.jpg');
+            background-size: cover;
+         }
+         .container_two .box_two{
+            position: relative;
+            width: 90%;
+            height: 40vh;
+            left: 0;
+            margin-top:0;
+            background-color: white;
+            text-align: center;
+         }
+         .container_two .box_two h1{
+            font-size:4vh ;
+            margin: 40px  0 10px 40px; 
+            font-weight: 100;
+         }
+         .container_two .box_two p{
+            font-size:2vh ;
+            color:#8c90a2 ;
+            margin: 10px  0 10px 40px; 
+            font-weight: 100;
+        
+         }
+         .container_three{
+            width: 100%;
+            height: auto;
+        }
+        .container_three .c{
+            width: auto;
+            height: auto;
+            margin: 10px  0 0 10px;
+            display: inline-block;
+         }
+        
+         .container_three .box{
+            display: inline-block;
+            width: 350px;
+            height: 480px;
+            margin-left:10px ;
+            margin-bottom:25px ;
+            /* background-color: aqua; */
+            background-image: url('../images/desktop/image-deep-earth.jpg');
+            background-size:cover ;
+            
+        
+        }
+        .container_three .box:nth-child(8){
+            display: none;
+        
+        
+        }
+        .container_three .cc .bt{
+            display: none;
+            
+         }
+         .container_three button{
+            position: relative;
+             display: flex;
+             background-color: white;
+             width: 60%;
+             height: 40px;
+             left: 50%;
+             transform: translate(-50%);
+             text-align: center;
+             border: 1px solid black;
+             margin-bottom: 15px;
+          }
+
+          .container_footerr {
+            width: 100%;
+            height:auto;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+       
+        .container_footerr ul{
+           display:none;
+           list-style: none;
+       }
+       
+        .container_footerr .top{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          margin: 40px 70px 10px 70px;
+          align-items: center;
+        }
+       
+        .container_footerr .bottom{
+           display: flex;
+           justify-content: center;
+           margin: 10px 70px 20px 70px;
+           font-size: 15px;
+       
+        }
+        .container_footerr .bottom p{
+           color: #6d787f;
+        }
+}
+
+@media (max-width: 650px) {
+    .header ul{
+        display: none;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+        }
+}
+@media (max-width: 750px) {
+    .header ul{
+        display: none;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+}
