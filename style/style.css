@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:sans-serif;
+    scroll-behavior: smooth;
 }
 .mobile_header{
     flex-direction: column;
@@ -15,11 +16,18 @@
     color: white;
 }
 .mobile_header li{
+    
     display: block;
     color: white;
     font-size: 23px;
     margin-bottom: 15px;
     font-weight: 100;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 .mobile_all{
     margin: 50px;
@@ -27,6 +35,7 @@
 }
 .mobile_header .top{
     margin-bottom: 80px;
+    width: 50px;
 }
 .mobile_header .top .left{
     position: absolute;
@@ -83,16 +92,31 @@ align-items: center;
     border-radius:5px ;
     background-color: #ffffff;
     margin-bottom:5px ; 
- }
+}
 
 .header ul{
-list-style: none;
-display: inline-block;
+    list-style: none;
+    display: inline-block;
 }
 .header ul li{
+    position: relative;
+    padding-bottom: 5px;
     display: inline-block;
     margin: 0 10px;
- }
+}
+.header li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease;
+}
+.header li:hover::after {
+    width: 50%;
+  }
  .container_one .box{
     display: flex;
     border: 1px solid  white;
@@ -249,6 +273,8 @@ display: inline-block;
 }
 .container_three  .btt{
     display: none;
+    width: 15%;
+    height: 40px;
     background-color: white;
     
  }
@@ -278,6 +304,9 @@ display: inline-block;
     font-weight: 100;
 
 }
+.container_footerr li:hover{
+    transform: scale(1.05);
+}
 
  .container_footerr .top{
    display: flex;
@@ -296,7 +325,12 @@ display: inline-block;
  .container_footerr .bottom p{
     color: #6d787f;
  }
-
+.complete{
+    display: none;
+}
+#showless{
+    display: none;
+}
  @media (max-width: 750px) {
     .header ul{
         display: none;
@@ -367,16 +401,37 @@ display: inline-block;
             height: auto;
         }
         .container_three .c{
+            display: block;
             width: auto;
             height: auto;
             margin: 10px  0 0 10px;
             display: inline-block;
+            align-items: center;
+            justify-content: center;
          }
+         .container_three .cc {
+           margin: 0 0 40px 0;
+            font-weight: 100;
+            height: auto;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        
+        }
+         .container_three .cc h2{
+           
+            font-weight: 100;
+            height: auto;
+            display: flex;
+            text-align: center;
+        
+        }
         
          .container_three .box{
             display: inline-block;
-            width: 350px;
-            height: 480px;
+            width: 90%;
+            height: 150px;
             margin-left:10px ;
             margin-bottom:25px ;
             /* background-color: aqua; */
@@ -385,9 +440,59 @@ display: inline-block;
             
         
         }
+        .container_three .box:nth-child(1){
+            background-image: url('../images/mobile/image-deep-earth.jpg');
+            background-size:cover ;
+        
+        
+        }
+        .container_three .box:nth-child(2){
+            background-image: url('../images/mobile/image-night-arcade.jpg');
+            background-size:cover ;
+        
+        
+        }
+        .container_three .box:nth-child(3){
+            background-image: url('../images/mobile/image-soccer-team.jpg');
+            background-size:cover ;
+        
+        
+        }
+        .container_three .box:nth-child(4){
+            background-image: url('../images/mobile/image-grid.jpg');
+            background-size:cover ;
+        
+        
+        }
+        .container_three .box:nth-child(5){
+            background-image: url('../images/mobile/image-from-above.jpg');
+            background-size:cover ;
+        
+        
+        }
+        .container_three .box:nth-child(6){
+            background-image: url('../images/mobile/image-pocket-borealis.jpg');
+            background-size:cover ;
+        
+        
+        }
+        .container_three .box:nth-child(7){
+            background-image: url('../images/mobile/image-curiosity.jpg');
+            background-size:cover ;
+        
+        
+        }        
         .container_three .box:nth-child(8){
             display: none;
         
+        
+        }
+        .container_three .box p{
+            color: aliceblue;
+            position: relative;
+            font-size: 2.5vh;
+            margin-left: 20px;
+            top:65%;
         
         }
         .container_three .cc .bt{
@@ -397,16 +502,21 @@ display: inline-block;
          .container_three button{
             position: relative;
              display: flex;
-             background-color: white;
-             width: 60%;
+             width: 30%;
              height: 40px;
+             background-color: white;
              left: 50%;
              transform: translate(-50%);
              text-align: center;
-             border: 1px solid black;
+             justify-content: center;
+             align-items: center;
              margin-bottom: 15px;
           }
-
+          .container_three button:hover{
+             color: white;
+             background-color: rgb(0, 0, 0);
+             
+          }
           .container_footerr {
             width: 100%;
             height:auto;
@@ -417,13 +527,26 @@ display: inline-block;
             text-align: center;
         }
        
-        .container_footerr ul{
+        .container_footerr ul:nth-child(1){
            display:none;
            list-style: none;
        }
+       .container_footerr ul:nth-child(2){
+        display:block;
+        list-style: none;
+    }
+    .container_footerr li{
+        margin-top: 15px;
+        display:block;
+       
+    }
+    .container_footerr li:hover{
+        transform: scale(1.05);
+    }
        
         .container_footerr .top{
           display: flex;
+          flex-direction: column;
           justify-content: center;
           text-align: center;
           margin: 40px 70px 10px 70px;
@@ -434,7 +557,7 @@ display: inline-block;
            display: flex;
            justify-content: center;
            margin: 10px 70px 20px 70px;
-           font-size: 15px;
+           font-size: 12px;
        
         }
         .container_footerr .bottom p{
